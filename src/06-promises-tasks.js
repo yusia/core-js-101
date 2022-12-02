@@ -52,7 +52,7 @@ function willYouMarryMe(isPositiveAnswer) {
  *    })
  *
  */
- function processAllPromises(/* array */) {
+function processAllPromises(/* array */) {
   throw new Error('Not implemented');
 }
 
