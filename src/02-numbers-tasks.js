@@ -7,7 +7,6 @@
  *                                                                                           *
  ******************************************************************************************* */
 
-
 /**
  * Returns an area of a rectangle given by width and height.
  *
@@ -19,10 +18,9 @@
  *   5, 10 => 50
  *   5, 5  => 25
  */
-function getRectangleArea(/* width, height */) {
-  throw new Error('Not implemented');
+function getRectangleArea(width, height) {
+  return width * height;
 }
-
 
 /**
  * Returns a circumference of circle given by radius.
@@ -35,8 +33,8 @@ function getRectangleArea(/* width, height */) {
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCircleCircumference(/* radius */) {
-  throw new Error('Not implemented');
+function getCircleCircumference(radius) {
+  return 2 * radius * Math.PI;
 }
 
 /**
@@ -54,7 +52,6 @@ function getCircleCircumference(/* radius */) {
 function getAverage(/* value1, value2 */) {
   throw new Error('Not implemented');
 }
-
 /**
  * Returns a distance between two points by cartesian coordinates.
  *
@@ -70,8 +67,8 @@ function getAverage(/* value1, value2 */) {
  *   (0,0) (1,0)    => 1
  *   (-5,0) (10,-10) => 18.027756377319946
  */
-function getDistanceBetweenPoints(/* x1, y1, x2, y2 */) {
-  throw new Error('Not implemented');
+function getDistanceBetweenPoints(x1, y1, x2, y2) {
+  return Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 }
 
 /**
@@ -86,10 +83,9 @@ function getDistanceBetweenPoints(/* x1, y1, x2, y2 */) {
  *   x + 8 = 0       => -8
  *   5*x = 0         => 0
  */
-function getLinearEquationRoot(/* a, b */) {
-  throw new Error('Not implemented');
+function getLinearEquationRoot(a, b) {
+  return -b / a;
 }
-
 
 /**
  * Returns an angle (in radians) between two vectors given by xi and yi,
@@ -129,7 +125,6 @@ function getLastDigit(/* value */) {
   throw new Error('Not implemented');
 }
 
-
 /**
  * Returns a number by given string representation.
  *
@@ -161,7 +156,6 @@ function parseNumberFromString(/* value */) {
 function getParallelepipedDiagonal(/* a, b, c */) {
   throw new Error('Not implemented');
 }
-
 
 /**
  * Returns the number rounded to specified power of 10.
